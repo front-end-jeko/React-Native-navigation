@@ -7,22 +7,20 @@ import { LinearGradient } from 'expo-linear-gradient';
 function Landing({ drawerAnimationStyle, navigation }) {
 	return (
 		<Animated.View style={[styles.Container, drawerAnimationStyle]}>
-			<LinearGradient colors={['#56CCF2', '#2F80ED']} styles={styles.Width}>
-				<TouchableOpacity
-					style={styles.BurgerMenu}
-					onPress={() => navigation.toggleDrawer()}
-				>
-					<Entypo name='menu' size={34} color='#0D0D19' />
-				</TouchableOpacity>
+			<TouchableOpacity
+				style={styles.BurgerMenu}
+				onPress={() => navigation.toggleDrawer()}
+			>
+				<Entypo name='menu' size={34} color='#0D0D19' />
+			</TouchableOpacity>
 
-				<Text
-					style={{
-						fontSize: 30,
-					}}
-				>
-					Landing Screen
-				</Text>
-			</LinearGradient>
+			<Text
+				style={{
+					fontSize: 30,
+				}}
+			>
+				Landing Screen
+			</Text>
 		</Animated.View>
 	);
 }
@@ -39,12 +37,13 @@ const styles = StyleSheet.create({
 		flex: 1,
 		alignItems: 'center',
 		justifyContent: 'center',
-		backgroundColor: 'red',
+		backgroundColor: '#fff',
 	},
 
 	BurgerMenu: {
 		top: 50,
 		left: 15,
 		position: 'absolute',
+		zIndex: 11,
 	},
 });
