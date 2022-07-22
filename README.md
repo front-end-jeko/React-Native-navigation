@@ -1,3 +1,4 @@
 ###  Here's the result
 
-<img src="https://github.com/front-end-jeko/React-navigation/blob/main/assets/menu.gif" width="300">
+https://user-images.githubusercontent.com/43757639/180496657-66ebeb36-28a1-4d1c-be1e-980b574703c9.mp4
+
